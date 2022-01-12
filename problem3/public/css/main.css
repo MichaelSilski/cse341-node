@@ -1,0 +1,16 @@
+body {
+   background-color: gray;
+}
+ul {
+   list-style: none;
+}
+a{
+   text-decoration: none;
+   color: yellow;
+}
+a:hover, a:active {
+   color: red;
+}
+a.active {
+   color: blue;
+}
