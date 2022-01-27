@@ -38,10 +38,6 @@ app.use(errorController.get404);
 
 const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://nodeJS-app:nodeJS-app@cse341cluster-3dwlw.mongodb.net/shop?retryWrites=true&w=majority"
 const options = {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
   family: 4
 };
 
