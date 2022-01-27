@@ -69,7 +69,7 @@ mongoose
 });
 
 const corsOptions = {
-  origin: "https://<your_app_name>.herokuapp.com/",
+  origin: "https://michael-cse341-online-store.herokuapp.com/",
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
