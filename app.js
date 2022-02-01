@@ -4,7 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+require('dotenv').config();
 
 const PORT = process.env.PORT || 5000
 
@@ -36,7 +36,7 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
-const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://nodeJS-app:EjMkoDLLY2QonIam@academindnodejs.nsg6n.mongodb.net/shop?retryWrites=true&w=majority"
+const MONGODB_URL = process.env.MONGODB_URL || `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@academindnodejs.nsg6n.mongodb.net/shop?retryWrites=true&w=majority`
 const options = {
   family: 4
 };
