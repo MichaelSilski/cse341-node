@@ -36,7 +36,7 @@ app.use(shopRoutes);
 
 app.use(errorController.get404);
 
-const MONGODB_URL = process.env.MONGODB_URL || `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@academindnodejs.nsg6n.mongodb.net/shop?retryWrites=true&w=majority`
+const MONGODB_URL = process.env.MONGODB_URL || `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@academindnodejs.nsg6n.mongodb.net/shop`
 const options = {
   family: 4
 };
