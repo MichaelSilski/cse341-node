@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 * {
   box-sizing: border-box;
 }
@@ -7,7 +6,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -26,7 +25,6 @@ form {
 .image {
   height: 20rem;
 }
-
 .image img {
   height: 100%;
 }
@@ -39,7 +37,6 @@ form {
   display: flex;
   align-items: center;
 }
-
 .main-header__nav {
   height: 100%;
   width: 100%;
@@ -47,20 +44,27 @@ form {
   align-items: center;
   justify-content: space-between;
 }
-
 .main-header__item-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
 .main-header__item {
   margin: 0 1rem;
   padding: 0;
 }
-
-.main-header__item a,
+.main-header__item a {
+  font: inherit;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.main-header__item a:hover, .main-header__item a:active, .main-header__item a.active {
+  color: #ffeb3b;
+}
 .main-header__item button {
   font: inherit;
   background: transparent;
@@ -69,12 +73,7 @@ form {
   color: white;
   cursor: pointer;
 }
-
-.main-header__item a:hover,
-.main-header__item a:active,
-.main-header__item a.active,
-.main-header__item button:hover,
-.main-header__item button:active {
+.main-header__item button:hover, .main-header__item button:active {
   color: #ffeb3b;
 }
 
@@ -91,11 +90,9 @@ form {
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
 }
-
 .mobile-nav.open {
   transform: translateX(0);
 }
-
 .mobile-nav__item-list {
   list-style: none;
   display: flex;
@@ -103,13 +100,25 @@ form {
   margin: 0;
   padding: 0;
 }
-
 .mobile-nav__item {
   margin: 1rem;
   padding: 0;
 }
-
-.mobile-nav__item a,
+.mobile-nav__item a {
+  font: inherit;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mobile-nav__item a:hover, .mobile-nav__item a:active, .mobile-nav__item a.active {
+  background: #00695c;
+  color: white;
+  border-radius: 3px;
+}
 .mobile-nav__item button {
   font: inherit;
   text-decoration: none;
@@ -120,12 +129,7 @@ form {
   border: none;
   cursor: pointer;
 }
-
-.mobile-nav__item a:active,
-.mobile-nav__item a:hover,
-.mobile-nav__item a.active,
-.mobile-nav__item button:hover,
-.mobile-nav__item button:active {
+.mobile-nav__item button:hover, .mobile-nav__item button:active {
   background: #00695c;
   color: white;
   border-radius: 3px;
@@ -140,13 +144,10 @@ form {
   color: white;
   cursor: pointer;
 }
-
 #side-menu-toggle:focus {
   outline: none;
 }
-
-#side-menu-toggle:active,
-#side-menu-toggle:hover {
+#side-menu-toggle:active, #side-menu-toggle:hover {
   color: #ffeb3b;
   border-color: #ffeb3b;
 }
@@ -172,34 +173,29 @@ form {
 .card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
-
-.card__header,
+.card__header {
+  padding: 1rem;
+}
+.card__header h1 {
+  margin: 0;
+}
 .card__content {
   padding: 1rem;
 }
-
-.card__header h1,
-.card__content h1,
-.card__content h2,
-.card__content p {
+.card__content h1, .card__content h2, .card__content p {
   margin: 0;
 }
-
 .card__image {
   width: 100%;
 }
-
 .card__image img {
   width: 100%;
 }
-
 .card__actions {
   padding: 1rem;
   text-align: center;
 }
-
-.card__actions button,
-.card__actions a {
+.card__actions button, .card__actions a {
   margin: 0 0.25rem;
 }
 
@@ -214,21 +210,16 @@ form {
   border-radius: 3px;
   cursor: pointer;
 }
-
-.btn:hover,
-.btn:active {
+.btn:hover, .btn:active {
   background-color: #00695c;
   color: white;
 }
-
 .btn.danger {
   color: red;
   border-color: red;
 }
-
-.btn.danger:hover,
-.btn.danger:active {
-  background: red;
+.btn.danger:hover, .btn.danger:active {
+  background-color: red;
   color: white;
 }
 
@@ -241,10 +232,9 @@ form {
   background: #b9c9ff;
   text-align: center;
 }
-
 .user-message--error {
   border-color: red;
-  background: rgb(255, 176, 176);
+  background: #ffb0b0;
   color: red;
 }
 
@@ -261,3 +251,5 @@ form {
     width: 30rem;
   }
 }
+
+/*# sourceMappingURL=main.css.map */
