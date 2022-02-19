@@ -177,7 +177,10 @@ exports.postDeleteProduct = (req, res, next) => {
   Product.deleteOne({ _id: prodId, userId: req.user._id })
     .then(() => {
       console.log('DESTROYED PRODUCT');
-      res.redirect('/admin/products');
+      req.user.removeFromCart(prodId).then(result => {
+        console.log('DELETED ITEM FROM CART');
+        res.redirect('/admin/products');
+      });
     })
     .catch(err => {
       const error = new Error(err);
